@@ -1,0 +1,218 @@
+body{
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right ,rgb(240, 182, 194),rgb(206, 166, 224), rgb(158, 141, 214),rgb(181, 210, 233));
+    
+}
+
+
+
+.contenedor{
+    margin: auto;
+    width: 80%;
+    height:800%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+img{
+    width: 400px;
+    height: 400px;
+  
+}
+
+
+
+
+
+.contenedor-formulario{
+margin: 30px 0 0 0;
+width: 560px;
+min-height: 500px;
+background: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+border: 1px solid rgb(203, 203, 203);
+position: relative;
+
+}
+
+.contenedor-formulario h3{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(53, 53, 53);
+    margin: 0;
+    padding: 0;
+    margin: 20px;
+    
+
+}
+
+.formulario{
+    width: 80%;
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(47, 47, 47);   
+}
+
+#nombre,#correo,#telefono,#ubicacion{
+    width: 355px;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(47, 47, 47); 
+}
+
+#nombre::placeholder,#correo::placeholder,#telefono::placeholder,#ubicacion::placeholder{
+    font-size: 16px;
+}
+
+#nombre:hover,#correo:hover,#telefono:hover,#ubicacion:hover{
+    outline: 1px solid rgb(206, 206, 206);
+
+}
+
+
+#btn-submit{
+    width: 120px;
+    height: 48px;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    background: rebeccapurple;
+    
+}
+
+#btn-submit:hover{
+border: none;
+outline: 1px solid rgb(130, 130, 130);
+}
+
+
+input{
+    margin: 18px 15px;
+    
+}
+
+#sexo{
+    margin-left: 3px;
+    
+}
+
+#file{
+    display: none;
+}
+
+#documento{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 18px;
+}
+
+#terminos{
+    margin-left: 3px;
+}
+
+
+
+.modal{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 120%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-contenido{
+  width: 50%;
+  height: 40%;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-contenido h3{
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(53, 53, 53);
+}
+
+
+.btn-ver{
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    background: rebeccapurple;
+}
+
+.btn-ver:hover{
+border: none;
+outline: 1px solid rgb(130, 130, 130);
+}
+
+
+#ventana{
+    opacity: 1;
+    visibility: visible;
+}
+
+#style-error{
+ color: red;
+ line-height: 20px;
+ text-align: center;
+ padding: 2px;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 700;
+    
+}
+
+.error-rojo::placeholder{
+    color: red;
+}
